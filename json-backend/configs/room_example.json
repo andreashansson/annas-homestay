@@ -1,0 +1,43 @@
+{
+    "count": 1,
+    "additionalInfo": {},
+    "_type": "HTTPAPIResult",
+    "url": "/export/room/CERN/57.json?ak=00000000-0000-0000-0000-000000000000&pretty=yes",
+    "results": [
+        {
+            "building": "500",
+            "_type": "Room",
+            "name": "Main Auditorium",
+            "floor": "1",
+            "longitude": "6.0542704900999995",
+            "vcList": [
+                "Audio Conference",
+                "Built-in (MCU) Bridge",
+                "CERN MCU",
+                "ESnet MCU",
+                "EVO",
+                "H323 point2point",
+                "Vidyo"
+            ],
+            "equipment": [
+                "Blackboard",
+                "Computer Projector",
+                "Ethernet",
+                "Microphone",
+                "PC",
+                "Telephone conference",
+                "Video conference",
+                "Webcast/Recording",
+                "Wireless"
+            ],
+            "roomNr": "001",
+            "location": "CERN",
+            "latitude": "46.23141394580001",
+            "fullName": "500-1-001 - Main Auditorium",
+            "id": 57,
+            "bookingUrl": "/indico/rooms/room/CERN/57/book",
+            "avc": true
+        }
+    ],
+    "ts": 1406729635
+}

@@ -1,0 +1,9 @@
+{
+  "room1": {
+    "nr": 1,
+    "people": 4,
+    "double_beds": 1,
+    "single_beds": 2,
+    "available": true
+  }
+}

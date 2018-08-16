@@ -1,0 +1,43 @@
+{
+    "count": 1,
+    "additionalInfo": {},
+    "_type": "HTTPAPIResult",
+    "url": "/export/reservation/CERN.json?ak=00000000-0000-0000-0000-000000000000&detail=reservation&from=today&to=today&pretty=yes",
+    "results": [
+        {
+            "_type": "Reservation",
+            "repeat_unit": 1,
+            "endDT": {
+                "date": "2014-08-14",
+                "tz": "Europe/Zurich",
+                "time": "12:30:00"
+            },
+            "room": {
+                "_type": "Room",
+                "fullName": "500-1-001 - Main Auditorium",
+                "id": 57
+            },
+            "needs_general_assistance": false,
+            "isConfirmed": true,
+            "isValid": true,
+            "usesAVC": false,
+            "repeatability": "daily",
+            "repeat_step": 1,
+            "vcList": [],
+            "reason": "Summer Student Lecture programme",
+            "bookedForName": "DOE, John",
+            "is_rejected": false,
+            "is_cancelled": false,
+            "needsAVCSupport": false,
+            "startDT": {
+                "date": "2014-07-02",
+                "tz": "Europe/Zurich",
+                "time": "08:30:00"
+            },
+            "id": 63779,
+            "bookingUrl": "http://indico.server/rooms/booking/CERN/63779/",
+            "location": "CERN"
+        }
+    ],
+    "ts": 1406727843
+}
