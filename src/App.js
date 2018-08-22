@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './css/App.css';
+import Menu from './Components/Menu';
+import Main from './Components/Main';
+
 
 class App extends Component {
 
@@ -8,7 +11,8 @@ class App extends Component {
     this.state = {
       all_rooms: null,
       error: null,
-      dev: true
+      dev: true,
+      view: "home"
     }
   }
 
@@ -21,7 +25,10 @@ class App extends Component {
     }
     fetch(serverURL, {method: "GET"}).then(res => res.json()).then(
       (result) => {
-        console.log(result);
+        console.log(result.rooms);
+        this.setState({
+          all_rooms: result.roomss
+        });
       },
       (error) => {
         console.log(error);
@@ -32,18 +39,27 @@ class App extends Component {
     )
   }
 
+  changeview = (newView) => {
+    this.setState({
+      view: newView
+    });
+  }
+
+
   render() {
-    console.log(this.state);
     if (this.state.error != null) {
       return (
-        <div>
-          <span>{this.state.error.message}</span><br /><span>Trying to run in dev but dev is false?</span>
+        <div className="app-container">
+          <span>{this.state.error.message}</span>
         </div>
       )
     }
     else {
       return (
-        <div>Success!</div>
+        <div className="app-container">
+          <Menu homeview={this.homeview} picturesview={this.picturesview} changeview={this.changeview} />
+          <Main view={this.state.view} />
+        </div>
       )
     }
   }

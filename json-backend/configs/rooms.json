@@ -5,5 +5,12 @@
     "double_beds": 1,
     "single_beds": 2,
     "available": true
+  },
+  "room2": {
+    "nr": 2,
+    "people": 4,
+    "double_beds": 1,
+    "single_beds": 2,
+    "available": true
   }
 }
