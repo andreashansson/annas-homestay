@@ -1,6 +1,3 @@
-html, body, #root, .app-container {
-  height: 100%;
-}
 
 .app-container {
   display: flex;
@@ -11,34 +8,4 @@ html, body, #root, .app-container {
 .main-container {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-}
-
-.menu-container {
-  padding-right: 40px;
-  padding-left: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.menu-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.menu-container ul li {
-  display: inline;
-  border: 1px solid black;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-li.link {
-  cursor: pointer;
-}
-
-.logo-container img {
-  width: 120px;
 }
